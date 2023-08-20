@@ -57,6 +57,11 @@ h1 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.box a{
+    color: white;
+    text-decoration: none;
+}
+
 /*footer {
     text-align: center;
     padding: 10px;
