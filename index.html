@@ -15,3 +15,22 @@
             background: linear-gradient(to bottom, #59656f, #d7cdcc); /* Two-color gradient background */
             overflow-x: hidden; /* Hide horizontal scroll */
         }
+
+        h1 {
+            color: white;
+            margin-top: 20px;
+            overflow: hidden; /* Hide overflowing text */
+            white-space: nowrap; /* Prevent line breaks */
+            border-right: 0.15em solid transparent; /* Create typing cursor */
+            animation: typing 1s steps(12) forwards, blink-caret 0.55s step-end infinite;
+        }
+
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 10%; }
+        }
+
+        @keyframes blink-caret {
+            from, to { border-color: transparent; }
+            50% { border-color: #fff; }
+        }
