@@ -77,6 +77,8 @@ h1 {
     --box-text: #59656f;
     --h1-color: #000000;
     --dot-color: #000000;
+    --button-color: #fff;
+    --button-text: #000;
 }
 
 body.dark {
@@ -85,10 +87,13 @@ body.dark {
     --box-text: #f2f2f2;
     --h1-color: #fff;
     --dot-color: #fff;
+    --button-color: #000000;
+    --button-text: #fff;
 }
 
 .toggle-button {
-    background-color: #b5d3b1;
+    background-color: var(--button-color);
+    color: var(--button-text);
     padding: 10px;
 
     position: absolute;
