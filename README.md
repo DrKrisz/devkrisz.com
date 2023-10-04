@@ -1,1 +1,3 @@
-https://drkrisz.github.io/krisztianbernath.com/
+https://drkrisz.github.io/devkrisz.com/
+
+https://devkrisz.com/
