@@ -1,125 +1,42 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  background: var(--background);
-  overflow-x: hidden; /* Hide horizontal scroll */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-body a {
-  -webkit-user-select: none;
-  -webkit-touch-callout: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+body{
+    background-color: rgb(71, 71, 71);
 }
-body a:hover {
-  cursor: pointer;
-}
-
-h1 {
-  color: var(--h1-color);
-  margin-top: 20px;
-  overflow: hidden; /* Hide overflowing text */
-  white-space: nowrap; /* Prevent line breaks */
-  border-right: 0.15em solid transparent; /* Create typing cursor */
-  animation: typing 1s steps(12) forwards, blink-caret 0.55s step-end infinite;
-}
-
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 13vw;
-  }
-}
-
-@keyframes blink-caret {
-  from,
-  to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: var(--dot-color);
-  }
-}
-
 .container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 0;
-  max-width: 800px;
-  padding: 20px;
-  box-sizing: border-box;
+    
 }
-
 .box {
-  flex: 1;
-  padding: 0; /* No padding to make boxes 15vh tall */
-  height: 15vh;
-  width: 15vh;
-  background-color: var(--box-color); /* Use a CSS variable for box color */
-  box-sizing: border-box;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 15px;
-}
-
-.box:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.box a {
-  position: relative;
-  color: var(--box-text);
-  text-decoration: none;
-  padding: 25%;
-  /* border: red 1px solid;*/
-}
-
-/*footer {
     text-align: center;
-    padding: 10px;
-    background-color: #333;
     color: white;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-}*/
-
-:root {
-  --background: linear-gradient(to bottom, #9fb6c9, #b5d3b1);
-  --box-color: #f2f2f2;
-  --box-text: #59656f;
-  --h1-color: #000000;
-  --dot-color: #000000;
-  --button-color: #fff;
-  --button-text: #000;
+    display: grid;
+    box-sizing: border-box;
+    padding-bottom: 50px;
 }
-
-body.dark {
-  --background: linear-gradient(to bottom, #424a52, #8f8888);
-  --box-color: #59656f;
-  --box-text: #f2f2f2;
-  --h1-color: #fff;
-  --dot-color: #fff;
-  --button-color: #000000;
-  --button-text: #fff;
+.box h1{
+    font-weight: bold;
 }
-
-.toggle-button {
-  background-color: var(--button-color);
-  color: var(--button-text);
-  padding: 10px;
-
-  position: absolute;
-  top: 10px;
-  right: 10px;
+.box p {
+    font-size: 150%;
+    padding: 25px 15% 0 15%;
+    box-sizing: border-box;
+}
+.box img {
+    /*make the img centered*/
+    margin: 0 auto;
+    box-sizing: border-box;
+    height: 200px;
+    width: 300px;
+    border-radius: 25%;
+    border: 1px solid white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
+    cursor: pointer;
+}
+.box img:hover {
+    transform: scale(1.5);
+    border-radius: 0;
 }
